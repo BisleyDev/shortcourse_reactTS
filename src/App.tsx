@@ -5,6 +5,7 @@ import axios from "axios";
 import List from "./components/List";
 import UserItem from "./components/UserItem";
 import TodoItem from "./components/TodoItem";
+import EventExample from "./components/EventExample";
 
 const App = () => {
 	const [users, setUsers] = useState<IUser[]>([])
@@ -47,6 +48,7 @@ const App = () => {
 					(todo:ITodo)=> <TodoItem todo={todo} key={todo.id}/>
 				}
 			/>
+			<EventExample/>
 		</div>
 	)
 }
